@@ -1,0 +1,15 @@
+<?php
+
+fscanf(STDIN, "%d", $C);
+fscanf(STDIN, "%d", $A);
+
+$viagens = 0;
+
+
+while ($A > 0) {
+    $A -= ($C - 1);
+    $viagens++;
+}
+
+echo $viagens . PHP_EOL;
+?>
