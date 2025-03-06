@@ -1,0 +1,9 @@
+<?php
+
+fscanf(STDIN, "%d %d", $N, $H);
+$alturas = array_map('intval', explode(" ", trim(fgets(STDIN))));
+
+$brinquedos_disponiveis = array_filter($alturas, fn($altura) => $H >= $altura);
+
+echo count($brinquedos_disponiveis) . PHP_EOL;
+?>
